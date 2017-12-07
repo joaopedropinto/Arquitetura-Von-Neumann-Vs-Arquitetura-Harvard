@@ -1,1 +1,14 @@
-começando 
+Análise de Arquitetura: Von Neumann Vs Harvard
+
+John Von Neumann foi um matemático húngaro que teve contribuição na teoria dos conjuntos, análise funcional, teoria ergódica, mecânica quântica, ciência da computação, economia, teoria dos jogos, análise numérica, hidrodinâmica das explosões, estatística e muitas outras áreas relacionadas à matemática. Mas ficou ainda mais conhecido devido a Arquitetura de computador. Que é caracterizado pela possibilidade que uma máquina digital tem de armazenar seus programas no mesmo espaço de memória que os dados, dessa forma podendo manipular tais programas. 
+Esta arquitetura se resume em um projeto modelo de um computador digital de programa armazenado, que utiliza assim uma unidade de processamento (CPU) e uma de armazenamento (“memória”) para comportar, de forma respectiva, instruções e dados. 
+A máquina que foi proposta por Von Neumann reúne os componentes:
+1.	Uma memória
+2.	Uma unidade aritmética e lógica (ALU)
+3.	Uma unidade central de processamento (CPU), composta por diversos registradores, e por fim;
+4.	Uma unidade de Controle (CU), cuja função é buscar um programa na memória, instrução por instrução, e executá-lo sobre os dados de entrada, assim como a tabela de controle da Máquina de Turing Universal.
+Assim, todos os elementos encontrados nessa arquitetura, são alinhados da estrutura hardware do CPU, dessa forma o sistema pode então realizar todas as suas atividades sem apresentar erros no desempenho. Cada um dos elementos nesse sistema apresentado, é realizado à custa de componentes físicos independentes, onde implementação tem sido variado ao longo do tempo, resultado a evolução das tecnologias de fabricação. 
+
+
+Já a Arquitetura Harvard tem como base um conceito mais atual do que a de Von Neumann, por vir da conveniência de o microcontrolador trabalhar mais rapidamente. Ela é uma arquitetura que difere das demais ao possuir duas memórias distintas e autônomas em modo de barramento e comunicação com o processador.
+A arquitetura se baseia em separar os barramentos de dados das memórias onde se localizam as instruções de programas, e das memórias contendo dados, possibilitando que um determinado processador possa acessar as duas memórias de maneira simultânea, o que a faz ter uma performance melhor do que a de Von Neumann, por possibilitar a busca de uma outra instrução enquanto uma outra é executada.
